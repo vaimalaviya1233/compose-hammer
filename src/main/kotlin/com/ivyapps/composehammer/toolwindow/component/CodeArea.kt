@@ -1,6 +1,7 @@
 package com.ivyapps.composehammer.toolwindow.component
 
 import com.intellij.ui.components.JBTextArea
+import com.intellij.ui.dsl.builder.Align
 import com.intellij.ui.dsl.builder.Panel
 import com.intellij.ui.dsl.builder.Row
 import com.intellij.ui.dsl.gridLayout.HorizontalAlign
@@ -41,7 +42,8 @@ fun Panel.codeArea(
             updateUI()
         }.also {
             inputField = it.component
-        }.horizontalAlign(HorizontalAlign.FILL) // TODO: Fix this FILL deprecation
+        }.align(Align.FILL)
+//            .horizontalAlign(HorizontalAlign.FILL) // TODO: Fix this FILL deprecation
             .comment(tip)
     }
     if (hasCopy) {

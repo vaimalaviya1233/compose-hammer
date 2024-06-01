@@ -57,6 +57,7 @@ qodana {
     showReport = environment("QODANA_SHOW_REPORT").map { it.toBoolean() }.getOrElse(false)
 }
 
+/*
 // Configure Gradle Kover Plugin - read more: https://github.com/Kotlin/kotlinx-kover#configuration
 koverReport {
     defaults {
@@ -65,6 +66,7 @@ koverReport {
         }
     }
 }
+*/
 
 
 tasks {
